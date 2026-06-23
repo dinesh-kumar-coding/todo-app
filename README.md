@@ -1,16 +1,41 @@
-# React + Vite
+# ✅ React To-Do App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A clean, functional to-do list built with React. Add tasks, mark them complete, delete them, and see how many remain — all with a warm, minimal interface. Built to practice core React state management and the component composition patterns behind interactive apps.
 
-Currently, two official plugins are available:
+🔗 **Live demo:**https://todo-app-din-dev.vercel.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Add tasks** via a controlled input form (with empty-input validation)
+- **Mark tasks complete** by clicking them (strikethrough styling)
+- **Delete tasks** individually
+- **Live count** of remaining (incomplete) tasks
+- Warm, minimal "paper" UI
 
-## Expanding the ESLint configuration
+## Built with
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **React** (functional components + hooks)
+- **Vite** (build tooling)
+- Deployed on **Vercel**
+
+## What I learned / React concepts used
+
+- **Immutable state updates** — adding (spread operator), deleting (`.filter()`), and toggling (`.map()` with object spread) without ever mutating state directly
+- Managing a list in state and rendering it with `.map()` and stable `key`s
+- **Lifting state up** and passing functions as props — the app is split into `App`, `TodoForm`, and `TodoList` components, with state owned at the right level
+- Controlled form inputs with validation
+- **Deriving values** from state (the remaining-tasks count) instead of storing them separately
+- Handling event propagation (`stopPropagation`) so the delete button doesn't also toggle the task
+
+## Running locally
+
+```bash
+npm install
+npm run dev
+```
+
+```bash
+npm run build      # production build
+```
