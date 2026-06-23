@@ -1,16 +1,10 @@
-/* ============================================================
-   TO-DO APP  —  Vibe: WARM & MINIMAL ("paper / notebook")
-   Soft cream background, warm accents, calm and tidy.
-   Replace the to-do project's App.css with this file.
-   ============================================================ */
-
 :root {
   --bg: #faf6f0;
   --surface: #ffffff;
   --border: #ece3d6;
   --text: #3a3329;
   --text-muted: #9c907e;
-  --accent: #d97706;       /* warm amber */
+  --accent: #d97706;
   --accent-dark: #b45309;
   --accent-soft: #fef3e2;
   --danger: #b91c1c;
@@ -40,7 +34,6 @@ h1, h2 {
   margin-bottom: 20px;
 }
 
-/* Add-todo form */
 form {
   display: flex;
   gap: 10px;
@@ -62,7 +55,6 @@ input {
 input::placeholder { color: var(--text-muted); }
 input:focus { border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-soft); }
 
-/* Add button */
 button[type="submit"] {
   font-family: inherit;
   font-size: 1rem;
@@ -95,7 +87,6 @@ li {
 }
 li:hover { box-shadow: 0 4px 12px rgba(217, 119, 6, 0.1); }
 
-/* The delete button inside each todo (small, subtle until hover) */
 li button {
   font-family: inherit;
   font-size: 0.85rem;
@@ -109,7 +100,6 @@ li button {
 }
 li button:hover { color: #fff; background: var(--danger); border-color: var(--danger); }
 
-/* "X tasks remaining" count */
 .remaining {
   color: var(--text-muted);
   font-size: 0.95rem;
