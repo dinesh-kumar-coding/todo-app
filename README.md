@@ -2,7 +2,7 @@
 
 A clean, functional to-do list built with React. Add tasks, mark them complete, delete them, and see how many remain — all with a warm, minimal interface. Built to practice core React state management and the component composition patterns behind interactive apps.
 
-🔗 **Live demo:**https://todo-app-din-dev.vercel.app/
+🔗 **Live demo:** https://todo-app-din-dev.vercel.app/
 
 ---
 
